@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>盒模型--填充</title>
+	<style type="text/css">
+		#box1{
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			border: 1px solid red;
+		}
+
+		div{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		/*如果上、右、下、左的填充都为10px;可以这么写*/
+		div{
+		    padding:10px;
+		}
+		/*
+		上下填充为10px，作用为20px可以这样写
+		 */
+		div{
+			padding: 10px 20px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box1">盒子1</div>
+</body>
+</html>
+
+
+<!-- 
+元素内容与边框之间是可以设置距离的，称之为“填充”。填充也可分为上、右、下、左(顺时针)。如下代码：
+
+div{padding:20px 10px 15px 30px;}
+顺序一定不要搞混。可以分开写上面代码：
+
+div{
+   padding-top:20px;
+   padding-right:10px;
+   padding-bottom:15px;
+   padding-left:30px;
+}
+如果上、右、下、左的填充都为10px;可以这么写
+
+div{padding:10px;}
+如果上下填充一样为10px，左右一样为20px，可以这么写：
+
+div{padding:10px 20px;} -->

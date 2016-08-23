@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>   
+	<title>编程挑战：制作新按钮，“新窗口打开网站” ，点击打开新窗口。</title>
+	<script type="text/javascript">
+		function rec() {
+			 //    var  score; //定义一个变量，询问是否打开网站进行判断
+    // // 新窗口打开时弹出确认框，是否打开
+    // score=confirm("是否确认打开网站http：//www.imooc.com/");
+			var score = confirm("是否确认打开网站http：http://www.imooc.com/course/programdetail/pid/32");
+			if (score == true) {
+				window.open('http://www.imooc.com/course/programdetail/pid/32');
+			}
+			else{
+				document.write("拒绝打开新网页");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="button" value="是否打卡新网页" onclick="rec()">
+</body>
+</html>

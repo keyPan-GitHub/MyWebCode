@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>认识div在排版中的作用</title>
+	<style type="text/css">
+		div.hot{
+			font-size: 12px;
+			float: left;
+			color: red;
+		}
+		div.new{
+			font-size: 12px;
+			float: right;
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="hot">
+    <h2>热门课程排行榜</h2>
+    <ol>
+        <li>前端开发面试心法 </li>
+        <li>零基础学习html</li>
+        <li>javascript全攻略</li>
+    </ol>	
+	</div>
+
+    <div class="new">
+	    <h2>最新课程排行</h2>
+	    <ol>
+	        <li>版本管理工具介绍—Git篇 </li>
+	        <li>Canvas绘图详解</li>
+	        <li>QQ5.0侧滑菜单</li>
+	    </ol>
+    </div>
+	
+	<img src="http://img.mukewang.com/52d38c41000163e210120455.jpg">
+</body>
+</html>
+
+
+<!--
+
+在网页制作过程过中，可以把一些独立的逻辑部分划分出来，放在一个<div>标签中，这个<div>标签的作用就相当于一个容器。
+
+语法：
+
+<div>…</div>
+
+确定逻辑部分：
+
+什么是逻辑部分？它是页面上相互关联的一组元素。如网页中的独立的栏目版块，就是一个典型的逻辑部分。如下图所示：图中用红色边框标出的部分就是一个逻辑部分，就可以使用<div>标签作为容器。
+-->

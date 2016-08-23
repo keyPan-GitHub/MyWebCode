@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>form表单中的label标签</title>
+</head>
+<body>
+	<form action="save.php" method="post">
+		<label for="male">男</label>
+		<input type="radio" name="gender" id="male" />
+		<br>
+		<label for="female">女</label>
+		<input type="radio" name="gender" id="female" />
+		<br>
+		<label for="email">输入你的邮箱地址</label>
+		<input type="email" id="email" placeholder="Enter email"/>
+		<br>
+		<label for="yundong">你对什么运动感兴趣</label>
+		<br>
+		<label for="jog">慢跑</label>
+		<input type="checkbox" name="jog" id="jog" />
+		<label for="climb">登山</label>
+		<input type="checkbox" name="climb" id="climb" />
+		<label for="baskball">篮球</label>
+		<input type="checkbox" name="baskball" id="baskball" />
+		<br>
+	</form>
+</body>
+</html>
+
+<!--
+
+小伙伴们，你们在前面学习表单各种控件的时候，有没有发现一个标签--label，这一小节就来揭晓它的作用。
+
+label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。
+
+语法：
+
+<label for="控件id名称">
+注意：标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。
+
+例子：
+
+<form>
+  <label for="male">男</label>
+  <input type="radio" name="gender" id="male" />
+  <br />
+  <label for="female">女</label>
+  <input type="radio" name="gender" id="female" />
+  <label for="email">输入你的邮箱地址</label>
+  <input type="email" id="email" placeholder="Enter email">
+</form>
+-->

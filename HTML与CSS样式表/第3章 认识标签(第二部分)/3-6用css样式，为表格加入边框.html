@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>用css样式，为表格加入边框</title>
+	<style type="text/css">
+		table tr td,th{
+			border:1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<table summary="">
+		<tbody>
+		  <tr>
+		    <th>班级</th>
+		    <th>学生数</th>
+		    <th>平均成绩</th>
+		  </tr>
+		  <tr>
+		    <td>一班</td>
+		    <td>30</td>
+		    <td>89</td>
+		  </tr>
+		  <tr>
+		    <td>二班</td>
+		    <td>35</td>
+		    <td>85</td>
+		  </tr>
+		  <tr>
+		    <td>三班</td>
+		    <td>32</td>
+		    <td>80</td>
+		  </tr>
+		</tbody>
+	</table>
+</body>
+</html>
+
+<img src="http://img.mukewang.com/52d3993b00010d6203900285.jpg">
+
+<!--
+
+Table 表格在没有添加 css 样式之前，是没有边框的。这样不便于我们后期合并单元格知识点的讲解，所以在这一节中我们为表格添加一些样式，为它添加边框。
+
+在右侧代码编辑器中添加如下代码：
+
+<style type="text/css">
+table tr td,th{border:1px solid #000;}
+</style>
+上述代码是用 css 样式代码（后面章节会详细讲解），为th，td单元格添加粗细为一个像素的黑色边框。
+
+结果窗口显示出结果样式：
+-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>关闭窗口（window.close）</title>
+	<script type="text/javascript">
+		function rec() {
+			var mywin = window.open("http://www.imooc.com");
+			mywin.close();
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+<!-- 
+close()关闭窗口
+
+用法：
+
+window.close();   //关闭本窗口
+或
+
+<窗口对象>.close();   //关闭指定的窗口
+例如:关闭新建的窗口。
+
+<script type="text/javascript">
+   var mywin=window.open('http://www.imooc.com'); //将新打的窗口对象，存储在变量mywin中
+   mywin.close();
+</script>
+注意:上面代码在打开新窗口的同时，关闭该窗口，看不到被打开的窗口。 -->
