@@ -1,0 +1,131 @@
+body,p,h1,h2,h3,h4,h5,h6,form,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5,
+    normal,
+    "Arial",
+    "sans-serif",
+    "微软雅黑",
+    "宋体",
+    "Tahoma";
+    color: #666;
+}
+ul,ol{
+    list-style: none;
+}
+.demo01{
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.demo01 .left{
+    width: 100px;
+    float: left;
+}
+.demo01 .left img{
+    margin-left: 20px;
+}
+.demo01 .right{
+    width: 450px;
+    padding: 20px;
+    float: right;
+    background: #9cf;
+    border: 1px solid #ccc;
+}
+.demo01 .right p{
+    font-size: 12px;
+    line-height: 25px;
+}
+.demo01 .right span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 10px;
+}
+
+/*-------------------------*/
+.demo02{
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.demo02 img{
+    float: left;
+    margin-left: 20px;
+}
+.demo02 .right{
+    width: 450px;
+    padding: 20px;
+    float: right;
+    background: #9cf;
+    border: 1px solid #ccc;
+}
+.demo02 .right p{
+    font-size: 12px;
+    line-height: 25px;
+}
+.demo02 .right span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 10px;
+}
+
+/*-------------------------*/
+
+.demo03{
+    width: 450px;
+    padding: 20px;
+    /*float: right;*/
+    background: #9cf;
+    border: 1px solid #ccc;
+    margin-left: 100px;
+    position: relative;
+}
+.demo03 img{
+    float: left;
+    margin:-20px 0px 0px -100px;
+}
+.demo03 p{
+    font-size: 12px;
+    line-height: 25px;
+}
+.demo03 span{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

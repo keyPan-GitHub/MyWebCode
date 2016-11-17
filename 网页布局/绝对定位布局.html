@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>绝对定位布局</title>
+    <style type="text/css">
+    .box1{
+        background: red;
+        height: 300px;
+        /*position: relative;*/
+        /*top: 50px;*/
+        /*left: 30px;*/
+    }
+    /*没有偏移量的*/
+   /* .box2{
+        background: green;
+        height: 100px;
+        position: absolute;
+    }*/
+    /*有偏移量的*/
+    .box2{
+        background: green;
+        height: 100px;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+    .box3{
+        background: yellow;
+        height: 200px;
+    }
+    /*没有偏移量的*/
+    /*.box{
+        position: relative;
+        height: 60px;
+        background: blue;
+    }*/
+    /*有偏移量的*/
+   .box{
+        position: relative;
+        height: 60px;
+        background: blue;
+    }
+    .warp{
+        height:400px;
+        width: 80%;
+        background: black;
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+<div class="warp">
+    <div class="box1">box1</div>
+    <div class="box">box
+        <div class="box2">box2box2box2box2</div>
+    </div>
+    <div class="box3">box3</div>
+</div>
+
+
+</body>
+</html>
