@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>水平居中总结-不定宽块状元素方法（三）</title>
+	<style type="text/css">
+	.container{
+	    float:left;
+		position:relative;
+		left:50%
+	}
+
+	.container ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+		position:relative;
+		left:-50%;
+	}
+	.container li{float:left;display:inline;margin-right:8px;}
+	.wrap {
+    float:left;
+    position:relative;
+    left:50%
+	}
+	.wrap-center{
+	    background:#ccc;
+	    position:relative;
+	    left:-50%;
+	}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<ul>
+    	<li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+
+<!--下面是代码任务区-->
+<div class="wrap">
+    <div class="wrap-center">我们来学习一下这种方法。</div>
+</div>
+</body>
+</html>
+
+<!-- 
+除了前两节讲到的插入table标签，以及改变元素的display类型，可以使不定宽块状元素水平居中之外，本节介绍第3种实现这种效果的方法，设置浮动和相对定位来实现。
+
+方法三：通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left: -50% 来实现水平居中。
+
+我们可以这样理解：假想ul层的父层（即下面例子中的div层）中间有条平分线将ul层的父层（div层）平均分为两份，ul层的css代码是将ul层的最左端与ul层的父层（div层）的平分线对齐；而li层的css代码则是将li层的平分线与ul层的最左端（也是div层的平分线）对齐，从而实现li层的居中。
+
+ 
+
+代码如下：
+
+<body>
+<div class="container">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+</body>
+css代码：
+
+<style>
+.container{
+    float:left;
+    position:relative;
+    left:50%
+}
+
+.container ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    
+    position:relative;
+    left:-50%;
+}
+.container li{float:left;display:inline;margin-right:8px;}
+</style>
+ 
+
+这三种方法使用得都非常广泛，各有优缺点，具体选用哪种方法，可以视具体情况而定。 -->

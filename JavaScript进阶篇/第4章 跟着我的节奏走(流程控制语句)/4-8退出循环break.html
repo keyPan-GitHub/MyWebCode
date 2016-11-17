@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>退出循环break</title>
+	<script type="text/javascript">
+		var mynum =new Array(70,80,66,90,50,100,89);//定义数组mynum并赋值
+		var i=0;
+		while(i<mynum.length){
+			if (mynum[i]<60) {
+				document.write("成绩"+mynum[i]+"不及格，不用循环了"+"<br>");
+				break;
+			}
+			document.write("成绩:"+mynum[i]+"及格，继续循环"+"<br>");
+		  i=i+1;
+		}
+	</script>
+</head>
+<body>
+	<img src="http://img.mukewang.com/52dc866d0001512004990273.jpg">
+	<img src="http://img.mukewang.com/52dc85920001b91503690273.jpg">
+</body>
+</html>
+<!-- 
+在while、for、do...while、while循环中使用break语句退出当前循环，直接执行后面的代码。
+
+格式如下：
+
+for(初始条件;判断条件;循环后条件值更新)
+{
+  if(特殊情况)
+  {break;}
+  循环代码
+}
+当遇到特殊情况的时候，循环就会立即结束。看看下面的例子，输出10个数，如果数值为5，就停止输出。
+
+ 
+
+
+
+执行结果:
+
+
+
+注:当num=5的时候循环就会结束，不会输出后面循环的内容。 -->

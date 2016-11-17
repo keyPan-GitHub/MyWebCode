@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>指定分隔符连接数组元素join()</title>
+	<script type="text/javascript">
+		var myarr1 = new Array("86","010");
+		var myarr2 = new Array("84735623");
+		var myarr3 = myarr1.concat(myarr2);
+		document.write(myarr3.join("."));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+<!-- 
+join()方法用于把数组中的所有元素放入一个字符串。元素是通过指定的分隔符进行分隔的。
+
+语法：
+
+arrayObject.join(分隔符)
+参数说明:
+
+
+
+注意：返回一个字符串，该字符串把数组中的各个元素串起来，用<分隔符>置于元素与元素之间。这个方法不影响数组原本的内容。 我们使用join（）方法，将数组的所有元素放入一个字符串中，代码如下：
+<script type="text/javascript">
+  var myarr = new Array(3);
+  myarr[0] = "I";
+  myarr[1] = "love";
+  myarr[2] = "JavaScript";
+  document.write(myarr.join());
+</script>
+运行结果：
+
+I,love,JavaScript
+我们将使用分隔符来分隔数组中的元素，代码如下：
+
+<script type="text/javascript">
+  var myarr = new Array(3)
+  myarr[0] = "I";
+  myarr[1] = "love";
+  myarr[2] = "JavaScript";
+  document.write(myarr.join("."));
+</script>
+运行结果：
+
+I.love.JavaScript
+ -->

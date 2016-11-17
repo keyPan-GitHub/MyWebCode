@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>屏幕可用高和宽度</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("可用宽度：" +screen.availWidth+"px<br>" );
+		document.write("可用高度：" +screen.availHeight+"px" ); 
+	</script>
+</body>
+</html>
+
+<!-- 
+1. screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去界面特性，比如任务栏。
+
+2. screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去界面特性，比如任务栏。
+
+注意:
+
+不同系统的任务栏默认高度不一样，及任务栏的位置可在屏幕上下左右任何位置，所以有可能可用宽度和高度不一样。
+
+我们来获取屏幕的可用高和宽度，代码如下：
+
+<script type="text/javascript">
+document.write("可用宽度：" + screen.availWidth);
+document.write("可用高度：" + screen.availHeight);
+</script>
+注意:根据屏幕的不同显示值不同。 -->

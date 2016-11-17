@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>鼠标单击事件(onclick)</title>
+	<script type="text/javascript">
+		function openwin() {
+	     window.open('http://www.imooc.com','_blank','height=600,width=400,top=100,toolbar=no,left=0,menubar=no,scrollbars=no,status=no');
+	 }
+		function add2() {
+			var numa,numb,sum;
+			numa=6;
+			numb=8;
+			sum=numa+numb;
+			document.write("两数之和:"+sum);
+		}
+	</script>
+</head>
+<body>
+<form>
+	<input type="button" name="点击我" value="点击我" onclick="openwin()">
+	<input type="button" name="点击我" value="点击我" onclick="add2()">
+</form>
+</body>
+</html>
+<!-- 
+onclick是鼠标单击事件，当在网页上单击鼠标时，就会发生该事件。同时onclick事件调用的程序块就会被执行，通常与按钮一起使用。
+
+比如，我们单击按钮时，触发 onclick 事件，并调用两个数和的函数add2()。代码如下：
+
+<html>
+<head>
+   <script type="text/javascript">
+      function add2(){
+        var numa,numb,sum;
+        numa=6;
+        numb=8;
+        sum=numa+numb;
+        document.write("两数和为:"+sum);  }
+   </script>
+</head>
+<body>
+   <form>
+      <input name="button" type="button" value="点击提交" onclick="add2()" />
+   </form>
+</body>
+</html>
+注意: 在网页中，如使用事件，就在该元素中设置事件属性。  -->

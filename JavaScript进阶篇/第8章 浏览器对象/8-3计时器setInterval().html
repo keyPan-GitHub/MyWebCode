@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>计时器setInterval()</title>
+	<script type="text/javascript">
+		var attime,hh,mm,ss,ww,xx;
+		function clock() {
+			var time =new Date();
+			hh = time.getHours();
+			mm = time.getMinutes();
+			ss = time.getSeconds();
+			if(mm<10){hh="0"+mm};
+		    if(hh<10){hh="0"+hh};
+		    if(ss<10){ss="0"+ss};
+		    var week = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"]
+		    ww = time.getDay()
+		    xx = week[ww]
+		    attime = hh+":"+mm+":"+ss+xx;
+			document.getElementById("clock").value = attime;
+		}
+
+
+		  // function clock(){
+		  //   var time=new Date();          
+		  //   attime=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+		  //   document.getElementById("clock").value = attime;
+		  // }
+		var int = setInterval("clock()",1000);
+	</script>
+</head>
+<body>
+<form>
+<input type="text" id="clock" size="50" style="background:#000;color:#00ff00;width:500px";/>
+</form>
+</body>
+</html>
+
+
+<!-- 
+在执行时,从载入页面后每隔指定的时间执行代码。
+
+语法:
+
+setInterval(代码,交互时间);
+参数说明：
+
+1. 代码：要调用的函数或要执行的代码串。
+
+2. 交互时间：周期性执行或调用表达式之间的时间间隔，以毫秒计（1s=1000ms）。
+
+返回值:
+
+一个可以传递给 clearInterval() 从而取消对"代码"的周期性执行的值。
+
+调用函数格式(假设有一个clock()函数):
+
+setInterval("clock()",1000)
+或
+setInterval(clock,1000)
+我们设置一个计时器，每隔100毫秒调用clock()函数，并将时间显示出来，代码如下:
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>计时器</title>
+<script type="text/javascript">
+  var int=setInterval(clock, 100)
+  function clock(){
+    var time=new Date();
+    document.getElementById("clock").value = time;
+  }
+</script>
+</head>
+<body>
+  <form>
+    <input type="text" id="clock" size="50"  />
+  </form>
+</body>
+</html> -->

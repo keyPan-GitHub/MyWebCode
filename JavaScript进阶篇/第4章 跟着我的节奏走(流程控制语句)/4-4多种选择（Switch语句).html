@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>多种选择（Switch语句)</title>
+	<script type="text/javascript">
+		var myweek = 3;//myweek表示星期几变量
+		switch(myweek)
+		{
+		 case 1:
+		 case 2:
+		 document.write("学习理念知识");
+		 break;
+		 case 3:
+		 case 4:
+		 document.write("到企业实践");
+		 break;
+		 case 5:
+		 document.write("总结经验");
+		 break;
+		 default:
+		 document.write("周六、日休息和娱乐");
+		}
+	</script>
+</head>
+<body>
+
+	<img src="http://img.mukewang.com/52d1293c0001394705510767.jpg">
+	<img src="http://img.mukewang.com/52d128b80001995105210640.jpg">
+
+</body>
+</html>
+<!-- 
+当有很多种选项的时候，switch比if else使用更方便。
+
+语法:
+
+switch(表达式)
+{
+case值1:
+  执行代码块 1
+  break;
+case值2:
+  执行代码块 2
+  break;
+...
+case值n:
+  执行代码块 n
+  break;
+default:
+  与 case值1 、 case值2...case值n 不同时执行的代码
+}
+语法说明:
+
+Switch必须赋初始值，值与每个case值匹配。满足执行该 case 后的所有语句，并用break语句来阻止运行下一个case。如所有case值都不匹配，执行default后的语句。
+假设评价学生的考试成绩，10分满分制，我们按照每一分一个等级将成绩分等，并根据成绩的等级做出不同的评价。
+
+代码如下:
+
+
+
+执行结果:
+
+评语: 及格，加油!
+注意:记得在case所执行的语句后添加上一个break语句。否则就直接继续执行下面的case中的语句，看以下代码:
+
+
+
+执行结果:
+
+评语: 继续努力!
+评语: 及格，加油!
+评语: 凑合，奋进
+评语: 很棒，很棒
+评语: 高手，大牛
+在上面的代码中，没有break停止语句，如果成绩是4分，则case 5后面的语句将会得到执行，同样，case6、7-10后面的语句都会得到执行。 -->

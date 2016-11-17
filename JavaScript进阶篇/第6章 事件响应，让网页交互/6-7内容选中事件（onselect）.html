@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>内容选中事件（onselect）</title>
+	<script type="text/javascript">
+		function message() {
+			alert("您触发了选中事件");
+		}
+	</script>
+</head>
+<body>
+	<form>
+		个人简介:<br>
+		<textarea name="summary" cols="60" rows="5" onselect="message()">请写入个人简介。。。。。。。。。。</textarea>
+	</form>
+</body>
+</html>
+
+<!-- 选中事件，当文本框或者文本域中的文字被选中时，触发onselect事件，同时调用的程序就会被执行。
+
+如下代码,当选中用户文本框内的文字时，触发onselect 事件，并调用函数message()。 -->
+<img src="http://img.mukewang.com/53e190b70001ffa908560325.jpg">
+<img src="http://img.mukewang.com/5312d7ba00013fff03950319.jpg">

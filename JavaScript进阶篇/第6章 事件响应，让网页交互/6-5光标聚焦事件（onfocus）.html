@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>光标聚焦事件（onfocus）</title>
+	<script type="text/javascript">
+		function message() {
+			alert("请选择，您现在的职业");
+		}
+	</script>
+</head>
+<body>
+请选择您的职业:<br>
+	<form >
+		<select name="career" onfocus="message()">
+			<option>学生</option>
+			<option>教师</option>
+			<option>工程师</option>
+			<option>演员</option>
+			<option>会计</option>
+		</select>
+	</form>
+</body>
+</html>
+
+<!-- 当网页中的对象获得聚点时，执行onfocus调用的程序就会被执行。
+
+如下代码, 当将光标移到文本框内时，即焦点在文本框内，触发onfocus 事件，并调用函数message()。 -->
+<img src="http://img.mukewang.com/53e19337000113d108390338.jpg">
+<img src="http://img.mukewang.com/5312c5660001821a04300326.jpg">

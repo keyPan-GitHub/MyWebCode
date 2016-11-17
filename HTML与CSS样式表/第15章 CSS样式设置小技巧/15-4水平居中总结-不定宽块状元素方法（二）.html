@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>水平居中总结-不定宽块状元素方法（二）</title>
+	<style type="text/css">
+		.container{
+			text-align: center;
+		}
+		.container ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: inline;
+		}
+		.container li{
+			margin-right: 8px;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+    <ul>
+    	<li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
+<!-- 
+除了上一节讲到的插入table标签，可以使不定宽块状元素水平居中之外，本节介绍第2种实现这种效果的方法，改变元素的display类型为行内元素，利用其属性直接设置。
+
+第二种方法：改变块级元素的 display 为 inline 类型（设置为 行内元素 显示），然后使用 text-align:center 来实现居中效果。如下例子：
+
+html代码：
+
+<body>
+<div class="container">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+</div>
+</body>
+css代码：
+
+<style>
+.container{
+    text-align:center;
+}
+/* margin:0;padding:0（消除文本与div边框之间的间隙）*/
+.container ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:inline;
+}
+/* margin-right:8px（设置li文本之间的间隔）*/
+.container li{
+    margin-right:8px;
+    display:inline;
+}
+</style>
+这种方法相比第一种方法的优势是不用增加无语义标签，但也存在着一些问题：它将块状元素的 display 类型改为 inline，变成了行内元素，所以少了一些功能，比如设定长度值。 -->

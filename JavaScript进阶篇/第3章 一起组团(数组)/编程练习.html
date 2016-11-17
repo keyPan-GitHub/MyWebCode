@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>编程练习</title>
+	<script type="text/javascript">
+	 //创建数组
+	    var  arr = ['*','##',"***","&&","****","##*"];
+		   arr[7] = "**";
+		    num=arr.length;
+		 var arr2= new Array();
+	 //显示数组长度
+	 alert("数组长度为:"+arr.length);
+	 document.write("数组长度为:"+arr.length);
+	 j=0;
+	 //将数组内容输出，完成达到的效果。
+	 for (var i = 0; i < num; i++) {
+	 	if (arr[i]!=undefined) {
+	 		a=arr[i].indexOf("*");
+	 		b=arr[i].indexOf("#");
+	 		if (a!=-1&&b==-1) {
+	 			arr2[j]=arr[i];
+	 			j++;
+	 		}
+	 	}
+	 }
+	  	arr2=arr2.sort();
+
+	 	for (var i = 0; i < arr2.length; i++) {
+	 		document.write("<br/><br/>"+arr2[i]); 
+	 	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+<!-- 
+
+编程练习
+使用Javascript语言，把以下数组
+
+   var  arr = ['*','##',"***","&&","****","##*"];
+
+   arr[7] = "**";
+
+在页面显示如下图所示的图案：
+
+*
+
+**
+
+***
+
+**** 
+
+任务
+第一步：定义一个数组，存储要展示的图形。
+
+提示:
+   var  arr = ['*','##',"***","&&","****","##*"];
+   arr[7] = "**";
+第二步：预想一下arr 数组的长度是多少？     
+
+提示: 使用alert弹出数组的长度，看看是否跟自己的答案一样。
+第三步：将数组内容输出，完成达到的效果。
+
+ 提示: 想在不同行显示不同数组内容，别忘记<br/>换行标签。 -->

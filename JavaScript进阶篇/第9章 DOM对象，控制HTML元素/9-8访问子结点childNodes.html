@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>访问子结点childNodes</title>
+
+</head>
+<body>
+<div>
+  javascript  
+  <p>javascript</p>
+  <div>jQuery</div>
+  <h5>PHP</h5>
+</div>
+<script type="text/javascript">
+  var node=document.getElementsByTagName("div")[0].childNodes;
+ for(var i=0;i<node.length;i++)
+ {
+    document.write("[第"+(i+1)+"个节点]"+"<br/>"+"节点名："+node[i].nodeName+"<br/>"+"节点类型："+node[i].nodeType+"<br/>"+"节点值："+node.nodeValue+"<br/>"+"<br/>")
+ }
+ 
+ 
+</script>
+
+</body>
+</html>
+
+
+<img src="http://img.mukewang.com/538405fa00010e6c05630357.jpg">
+
+<img src="http://img.mukewang.com/538d2b8a000163e303430127.jpg">
+
+<!-- 访问选定元素节点下的所有子节点的列表，返回的值可以看作是一个数组，他具有length属性。
+
+语法：
+
+elementNode.childNodes
+注意：
+
+如果选定的节点没有子节点，则该属性返回不包含节点的 NodeList。
+
+我们来看看下面的代码:
+
+
+
+运行结果:
+
+IE:
+
+  UL子节点个数:3
+  节点类型:1
+其它浏览器:
+
+   UL子节点个数:7
+   节点类型:3
+注意:
+
+1. IE全系列、firefox、chrome、opera、safari兼容问题
+
+2. 节点之间的空白符，在firefox、chrome、opera、safari浏览器是文本节点，所以IE是3，其它浏览器是7，如下图所示:
+
+
+
+如果把代码改成这样:
+
+<ul><li>javascript</li><li>jQuery</li><li>PHP</li></ul>
+
+运行结果:（IE和其它浏览器结果是一样的）
+
+  UL子节点个数:3
+  节点类型:1 -->

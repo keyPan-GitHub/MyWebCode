@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>鼠标经过事件（onmouseover）</title>
+	<script type="text/javascript">
+		function message() {
+			confirm("请输入密码后，再单击确定");
+		}
+	</script>
+</head>
+<body>
+<form>
+	密码:<input type="password" name="password">
+	<input type="button" name="确定" value="确定" onmouseover="message()">
+</form>
+</body>
+</html>
+
+<!-- 鼠标经过事件，当鼠标移到一个对象上时，该对象就触发onmouseover事件，并执行onmouseover事件调用的程序。
+
+现实鼠标经过"确定"按钮时，触发onmouseover事件，调用函数info()，弹出消息框，代码如下: -->
+
+<img src="http://img.mukewang.com/53e196e500013f1807700354.jpg">
+<img src="http://img.mukewang.com/53e196fd00017d8704870416.jpg">

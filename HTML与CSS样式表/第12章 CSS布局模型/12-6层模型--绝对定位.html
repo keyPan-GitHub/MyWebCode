@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>层模型--绝对定位</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border: 2px red solid;
+			position: absolute;
+			right: 50px;
+			top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<p>如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。
+
+如下面代码可以实现div元素相对于浏览器窗口向右移动100px，向下移动50px。
+
+div{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    position:absolute;
+    left:100px;
+    top:50px;
+}
+
+效果如下：</p>
+<img src="http://img.mukewang.com/53a00b130001e86707360547.jpg">
+</body>
+</html>
