@@ -38,15 +38,31 @@
             }
         }
         
-        function checkone(){
-        	var hobby = document.getElementsByName("hobby");
-            var j=document.getElementById("wb").value;
+        // function checkone(){
+        // 	var hobby = document.getElementsByName("hobby");
+        //     var j=document.getElementById("wb").value;
         	
-	        // 任务3
-         	if (parseInt(j) < 1 || parseInt(j) > 6) {
-         		alert("请输入1-6之间的数字");
-         	}
-        	hobby[parseInt(j) - 1].checked = true;
+	       //  // 任务3
+        //  	if (parseInt(j) < 1 || parseInt(j) > 6) {
+        //  		alert("请输入1-6之间的数字");
+        //  	}
+        // 	hobby[parseInt(j) - 1].checked = true;
+        // }
+        // 
+        function checkone(){
+            clearall();
+            var hobby = document.getElementsByName("hobby");
+            var j=document.getElementById("wb").value;
+            for(var i=0;i<j.length;i++){
+                if(j.charAt(i)>6 || j.charAt(i)<1){
+                    alert("越界,请重新输入！");
+                    document.getElementById("wb").value="";
+                }
+            }
+                for(var n=0;n<j.length;n++){
+                   
+                        hobby[(j.charAt(n))-1].checked=true; 
+              }
         }
         
         </script>

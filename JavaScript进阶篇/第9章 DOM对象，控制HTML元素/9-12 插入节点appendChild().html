@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>插入节点appendChild()</title>
+
+</head>
+<body>
+
+<ul id="test">
+  <li>JavaScript</li>
+  <li>HTML</li>
+</ul> 
+ 
+<script type="text/javascript">
+  var otest = document.getElementById("test");  
+  var newnode = document.createElement("p");
+  newnode.innerHTML = "This is a new p";
+  //appendchild(newnode)方法添加节点
+  otest.appendChild(newnode);
+ 
+          
+</script> 
+</body>
+</html>
+<img src="http://img.mukewang.com/5398fd020001ad4905890193.jpg">
+
+<!-- 
+在指定节点的最后一个子节点列表之后添加一个新的子节点。
+
+语法:
+
+appendChild(newnode)
+参数:
+
+newnode：指定追加的节点。
+
+我们来看看，div标签内创建一个新的 P 标签，代码如下:
+
+
+
+运行结果:
+
+HTML
+JavaScript
+This is a new p -->

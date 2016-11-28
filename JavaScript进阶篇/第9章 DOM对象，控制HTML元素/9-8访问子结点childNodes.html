@@ -11,12 +11,16 @@
   <p>javascript</p>
   <div>jQuery</div>
   <h5>PHP</h5>
+  <!-- <ul><li>javascript</li><li>jQuery</li><li>PHP</li></ul> -->
 </div>
 <script type="text/javascript">
   var node=document.getElementsByTagName("div")[0].childNodes;
  for(var i=0;i<node.length;i++)
  {
-    document.write("[第"+(i+1)+"个节点]"+"<br/>"+"节点名："+node[i].nodeName+"<br/>"+"节点类型："+node[i].nodeType+"<br/>"+"节点值："+node.nodeValue+"<br/>"+"<br/>")
+    document.write("[第"+(i+1)+"个节点]"+"<br/>"+
+                   "节点名："+node[i].nodeName+"<br/>"+
+                   "节点类型："+node[i].nodeType+"<br/>"+
+                   "节点值："+node.nodeValue+"<br/>"+"<br/>")
  }
  
  

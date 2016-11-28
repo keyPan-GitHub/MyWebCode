@@ -5,7 +5,8 @@
 	<title>二选一 （if...else语句）</title>
 	<script type="text/javascript">
 		var ticket = true;//ticket初值为true，表示有票
-		if (ticket) {
+        var ticket1 = confirm("你有票吗")
+		if (ticket1 == true) {
 			document.write("有票");
 		}
 		else{
